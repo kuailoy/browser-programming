@@ -1,0 +1,174 @@
+/* 1. Element selector */
+body {
+  font-family: 'Arial';
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  color: #343434;
+}
+
+/* 2. Group selector */
+header, footer {
+  background-color: #f5f5f5;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+/* 3. Descendant selector */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: 500;
+}
+
+/* 4. ID selector */
+#works {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* 5. Pseudo-class */
+a:hover {
+  color: #004499;
+  text-decoration: underline;
+}
+
+/* Step 3 - Typography */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: 1.8;
+}
+
+/* Step 4 - Spacing (margin vs padding) */
+main {
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* Step 7 - Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+/* Step 8 - Basic layout constraint */
+header, footer, nav, main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Works section - project gallery */
+.project-wrapper {
+  display: grid;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+#works article {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#works article figure {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+#works article figure > img {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#works article figcaption {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+#works article figcaption strong {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  display: block;
+  margin-left: 20px;
+}
+
+#works article figcaption p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+  margin-left: 20px;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-top: 5px;
+  margin-left: 16px;
+}
+
+#works article figcaption a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #0066cc;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  margin-right: 10px;
+}
+
+#works article figcaption a:hover {
+  background-color: #e9ecef;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+#works figure iframe {
+  border-radius: 8px;
+}
